@@ -12,14 +12,15 @@
     <!-- Other css -->
     <link rel="stylesheet" href="./Style.css">
   </head>
+
   <body>
     <section>
       <div class="container p-5 border border-dark">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="/">
-            <img src="images/logo.svg" alt=""> 
-          </a>
+        <nav class="navbar navbar-expand-lg ">     
           <ul class="navbar-nav">
+            <a class="navbar-brand" href="/">
+              <img src="images/logo.svg" alt=""> 
+            </a>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
             </li>
@@ -35,7 +36,7 @@
               <a class="nav-link" href="#">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
+              <a id="SignUp" class="nav-link" href="#">Sign Up</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +49,7 @@
           <div class="col-sm p-5 border border-dark">
             <h1>More than just shorter links</h1>
             <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-            <button class="btn btn-info">Get Started</button>
+            <button class="btn btn-info rounded-pill p-2 pl-4 pr-4">Get Started</button>
           </div>
           <div class="col-sm p-5 border border-dark ilustration-1">
           </div>
@@ -58,17 +59,13 @@
 
     <section class="Section-2">
 
-      <div class="container p-5 border border-dark">
+      <div class="container border border-dark p-5">
         <div class="row ">
-          <div class="col p-5 border border-dark">
-            
+          <div class="col p-4 pt-5 pb-5 border border-dark container-section-2 rounded-lg">
             <form class="form-inline justify-content-center">
-              <div class="form-group mx-sm-3 mb-2">
-                <input type="link" class="form-control" placeholder="Shorten a link here...">
-              </div>
-              <button type="submit" class="btn btn-primary mb-2">Shorten it!</button>
+              <input type="" class="input-link rounded mr-3 col-9 p-2" placeholder="Shorten a link here...">
+              <button type="submit" class="btn btn-info rounded p-2 pr-4 pl-4 col-2">Shorten it!</button>
             </form>
-
           </div>
         </div>
       </div>
@@ -77,29 +74,29 @@
 
     <section class="Section-3">
       <div class="container p-5 border border-dark">
-        <div class="row">
-          <div class="col">
-            <h2>Advanced Statisticks</h2>
-            <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
+        <div class="row justify-content-center">
+          <div class="col-5 text-center">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
           </div>
         </div>
         <div class="row">
           <div class="col border border-dark">
-            <img src="./images/icon-brand-recognition.svg" alt="">            
+            <div class="rounded-circle"><img src="./images/icon-brand-recognition.svg" class="icon-section-3" alt="icon-brand-recognition"></div>            
             <h3>Brand Recognition</h3>
             <p>Boost your brand recognition with each click. Generic links don't mean a thing. 
               Branded links help instill confidence in your content
             </p>
           </div>
           <div class="col border border-dark">
-            <img src="./images/icon-detailed-records.svg" alt="">           
+            <div class="rounded-circle"><img src="./images/icon-detailed-records.svg" class="icon-section-3" alt="icon-detailed-records"></div>         
             <h3>Detailed Records</h3>
             <p>Gain into who is clicking your links. Knowing when and where people engage with your 
               content helps inform better decisions.
             </p>
           </div>
           <div class="col border border-dark">
-            <img src="./images/icon-fully-customizable.svg" alt="">
+            <div class="rounded-circle"><img src="./images/icon-fully-customizable.svg" class="icon-section-3" alt="icon-fully-customizable"></div>
             <h3>Fully Customizable</h3>
             <p>Improve brand awareness and content discoverability through customizable links, supercharging
               audience engagement.

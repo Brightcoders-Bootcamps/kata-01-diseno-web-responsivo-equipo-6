@@ -9,12 +9,37 @@
 --veryDarkBlue: hsl(255, 11%, 22%);
 --veryDarkViolet: hsl(260, 8%, 14%);
 }
-/*color: var(--cyan);*/
 
+body{
+    margin: auto;
+    max-width: 1440px;
+    min-width: 375px;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4{
+    color: var(---veryDarkViolet);
+    font-weight: 700;
+}
+p{
+    color: var(--grayishViolet);
+}
+/*color: var(--cyan);*/
 /*-----------------------------*/
 
 /*---------- Navbar ----------*/
-
+a {
+    color: var(--grayishViolet);
+}
+a:hover{
+    color: black;
+}
+#SignUp{margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: var(--cyan);
+    border-radius: 20px;
+    color: white;
+}
 
 /*----------------------------*/
 
@@ -28,9 +53,23 @@ div.ilustration-1{
 
 /*---------- Section-2 ----------*/
 
+.container-section-2{
+    background: var(--darkViolet);
+    background-image: url(/images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*-------------------------------*/
 
 /*---------- Section-3 ----------*/
-
+.icon-section-3{
+    margin-top: 20px; 
+}
+.rounded-circle{
+    background: var(--veryDarkBlue);
+    height: 90px;
+    text-align: center;
+    width: 90px;
+}
 /*-------------------------------*/
