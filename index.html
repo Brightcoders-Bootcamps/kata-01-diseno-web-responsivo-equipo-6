@@ -68,15 +68,41 @@
         <div class="row container-section-2">
           <div class="col rounded-lg">
             <form class="form-inline justify-content-center">
-              <input type="link" class="input-link rounded col-md-12 col-lg-9 m-2 p-2" placeholder="Shorten a link here...">
+              <input type="text" id="mylink" class="input-link rounded mr-3 col-9 p-2" placeholder="Shorten a link here...">
               <div class="background"></div>
-              <button type="submit" class="btn btn-info rounded m-2 p-2 pr-4 pl-4 col-md-12 col-lg-2">Shorten it!</button>
+              
+              <button type="button" id="Shorten" class="btn btn-info rounded p-2 pr-4 pl-4 col-2">Shorten it!</button>
             </form>
           </div>
         </div>
       </div>
+      <div id="aquimero"></div>
 
-    </section>
+    </div>
+
+  </section>
+
+  <script>
+  document.getElementById('Shorten').addEventListener('click', function(){
+      let url_larga = document.getElementById('mylink').value
+      fetch("https://rel.ink/api/links/",{
+        method:'POST',
+        body: JSON.stringify({
+          url:url_larga
+        }),
+        headers: {
+          "Content-type": "application/json"
+        }
+        })
+        .then(function(response){
+          return response.json()
+        })
+        .then(function(data){
+          document.getElementById("aquimero").innerHTML = `https://rel.ink/${data.hashid}`
+        })
+      });
+
+  </script>
 
     <section class="Section-3">
       <div class="container p-5 ">

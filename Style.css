@@ -62,55 +62,58 @@ div.ilustration-1 {
 }
 
 @media only screen and (max-width: 767px) {
-  h1{
+  h1 {
     font-size: 2.3rem;
   }
-.Section-1{
-  text-align: center;
-  justify-content: center;
-}
-
+  .Section-1 {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-div.ilustration-1 {
-  background-size: contain;
-  background-position: center;
-  height: 200px;
-}
+  div.ilustration-1 {
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+  }
 }
 
 /*-------------------------------*/
 
 /*---------- Section-2 ----------*/
+.Section-2 {
+  background: linear-gradient(white 50%, var(--gray) 50%);
+}
+
 .container-section-2 {
   background: var(--darkViolet);
   border-radius: 10px;
   padding: 50px;
 }
 
-@media only screen and (min-width: 376px){
-.container-section-2 {
-  background-image: url(images/bg-shorten-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+@media only screen and (min-width: 376px) {
+  .container-section-2 {
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .container-section-2 {
     background-image: url(images/bg-shorten-mobile.svg);
-    background-position-x: right;    
+    background-position-x: right;
     background-repeat: no-repeat;
     background-size: 200px;
     padding: 20px;
   }
-  }
+}
 
 /*-------------------------------*/
 
 /*---------- Section-3 ----------*/
-.Section-3{
+.Section-3 {
   background-color: var(--gray);
 }
 .rounded-circle {
@@ -127,10 +130,10 @@ div.ilustration-1 {
 }
 
 @media only screen and (max-width: 375px) {
-h2{
-  font-size: 1.6rem;
-}
+  h2 {
+    font-size: 1.6rem;
   }
+}
 /*-------------------------------*/
 
 /*-------------- begin Section-4  --------------*/
@@ -182,6 +185,9 @@ h2{
   padding: 0 5px 0 5px;
 }
 @media only screen and (max-width: 600px) {
+  .Section-5 {
+    text-align: center;
+  }
   .Section-5 div div div {
     margin-bottom: 20px;
   }
