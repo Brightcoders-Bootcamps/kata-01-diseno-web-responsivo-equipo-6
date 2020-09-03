@@ -47,7 +47,7 @@ a:hover {
 
 /*---------- Section-1 ----------*/
 div.ilustration-1 {
-  background-image: url(/images/illustration-working.svg);
+  background-image: url(images/illustration-working.svg);
   background-size: cover;
 }
 
