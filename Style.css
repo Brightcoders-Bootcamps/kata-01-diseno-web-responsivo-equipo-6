@@ -43,6 +43,44 @@ a:hover {
   color: white;
 }
 
+#SignUp:hover{
+  opacity: 0.5;
+}
+#colorIcono{
+  color: var(gray);
+}
+@media only screen and (max-width: 991px) {
+  .p-5 {
+    padding-top: 2rem !important;
+    padding-right: 0px !important;
+    padding-bottom: 1.5rem !important;
+    padding-left: 0px !important;
+  }
+  nav > div {
+    background: var(--darkViolet);
+    height: 360px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 30px;
+   
+  }
+  .nav-item {
+    
+    padding-top: 17px;
+  }
+  .nav-link{
+    color: white;
+  }
+  .linea{
+    background: var(--gray);
+  }
+  nav #logo{
+   align-content: flex-end;
+  }
+}
+	
 /*----------------------------*/
 
 /*---------- Section-1 ----------*/
