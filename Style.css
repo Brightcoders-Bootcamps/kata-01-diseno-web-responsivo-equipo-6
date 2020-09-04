@@ -130,6 +130,7 @@ div.ilustration-1 {
   padding: 50px;
 }
 
+
 @media only screen and (min-width: 376px) {
   .container-section-2 {
     background-image: url(images/bg-shorten-desktop.svg);
@@ -157,8 +158,8 @@ div.ilustration-1 {
 .rounded-circle {
   background: var(--veryDarkBlue);
   height: 90px;
+  margin-top: -65px;
   padding: 23px;
-  position: absolute;
   width: 90px;
 }
 .tag {
@@ -170,6 +171,9 @@ div.ilustration-1 {
 @media only screen and (max-width: 375px) {
   h2 {
     font-size: 1.6rem;
+  }
+  .rounded-circle{
+    float: center;
   }
 }
 /*-------------------------------*/
