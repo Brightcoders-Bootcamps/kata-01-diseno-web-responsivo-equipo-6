@@ -24,7 +24,6 @@ h4 {
 p {
   color: var(--grayishViolet);
 }
-/*color: var(--cyan);*/
 /*-----------------------------*/
 
 /*---------- Navbar ----------*/
@@ -43,10 +42,10 @@ a:hover {
   color: white;
 }
 
-#SignUp:hover{
-  opacity: 0.5;
+#SignUp:hover {
+  background-color: #80deea;
 }
-#colorIcono{
+#colorIcono {
   color: var(gray);
 }
 @media only screen and (max-width: 991px) {
@@ -64,23 +63,21 @@ a:hover {
     font-weight: 700;
     padding-left: 20px;
     padding-right: 30px;
-   
   }
   .nav-item {
-    
     padding-top: 17px;
   }
-  .nav-link{
+  .nav-link {
     color: white;
   }
-  .linea{
+  .linea {
     background: var(--gray);
   }
-  nav #logo{
-   align-content: flex-end;
+  nav #logo {
+    align-content: flex-end;
   }
 }
-	
+
 /*----------------------------*/
 
 /*---------- Section-1 ----------*/
@@ -97,6 +94,10 @@ div.ilustration-1 {
   border: none;
   border-radius: 40px;
   padding: 10px 40px 10px 40px;
+}
+
+.Section-1 button:hover {
+  background-color: #80deea;
 }
 
 @media only screen and (max-width: 767px) {
@@ -123,13 +124,22 @@ div.ilustration-1 {
 .Section-2 {
   background: linear-gradient(white 50%, var(--gray) 50%);
 }
+.Section-2 button:hover {
+  background-color: #80deea;
+}
+
+#errorMessage {
+  color: var(--red);
+  font-style: oblique;
+  margin-right: auto;
+  display: none;
+}
 
 .container-section-2 {
   background: var(--darkViolet);
   border-radius: 10px;
   padding: 50px;
 }
-
 
 @media only screen and (min-width: 376px) {
   .container-section-2 {
@@ -172,7 +182,7 @@ div.ilustration-1 {
   h2 {
     font-size: 1.6rem;
   }
-  .rounded-circle{
+  .rounded-circle {
     float: center;
   }
 }
@@ -200,6 +210,10 @@ div.ilustration-1 {
   padding: 10px 40px 10px 40px;
 }
 
+.Section-4 button:hover {
+  background: #80deea;
+}
+
 @media only screen and (max-width: 600px) {
   .Section-4 p {
     font-size: 20px;
@@ -215,6 +229,11 @@ div.ilustration-1 {
 
 .Section-5 div div div p {
   line-height: 20px;
+  cursor: pointer;
+}
+
+.Section-5 div div div p:hover {
+  color: var(--cyan);
 }
 
 .Section-5 div div div p:first-child {

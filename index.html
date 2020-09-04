@@ -68,24 +68,35 @@
     <section class="Section-2">
 
       <div class="container">
-        <div class="row container-section-2">
-          <div class="col rounded-lg">
-            <form class="form-inline justify-content-center">
-              <input type="text" id="mylink" class="input-link rounded col-12 col-lg-8 p-2 m-4" placeholder="Shorten a link here...">
-              <div class="background"></div>
-              <button type="button" id="Shorten" class="btn btn-info rounded p-2 pr-4 pl-4 col-12 col-lg-3">Shorten it!</button>
-            </form>
-          </div>
+        <div class="container-section-2">
+          <form>
+            <div class="row">
+              <div class="col-sm-12 col-md-8">
+                <input type="text" id="mylink" class="p-2 mr-4" placeholder="Shorten a link here..."><br>
+                <span id="errorMessage">Please add a link</span>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <button type="button" id="Shorten" class="btn btn-info p-2 pr-4 pl-4">Shorten it!</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <div id="aquimero"></div>
-
     </div>
 
   </section>
 
   <script>
   document.getElementById('Shorten').addEventListener('click', function(){
+    let link = document.getElementById('mylink').value;
+    if(link == ''){
+      document.getElementById('mylink').style.border = '3px solid var(--red) ';
+      document.getElementById('errorMessage').style.display = 'block';
+      return 0;
+    }
+      document.getElementById('mylink').style.border = '3px solid green';
+      document.getElementById('errorMessage').style.display = 'none';
       let url_larga = document.getElementById('mylink').value
       fetch("https://rel.ink/api/links/",{
         method:'POST',
