@@ -66,55 +66,65 @@
     </section>
 
     <section class="Section-2">
-
       <div class="container">
         <div class="container-section-2">
           <form>
-            <div class="row">
-              <div class="col-sm-12 col-md-8">
-                <input type="text" id="mylink" class="p-2 mr-4" placeholder="Shorten a link here..."><br>
+            <div class="row mx-auto">
+              <div class="col-sm-12 col-md-10">
+                <input type="text" id="mylink" class="form-control" placeholder="Shorten a link here...">
                 <span id="errorMessage">Please add a link</span>
               </div>
-              <div class="col-sm-12 col-md-4">
-                <button type="button" id="Shorten" class="btn btn-info p-2 pr-4 pl-4">Shorten it!</button>
+              <div class="col-sm-12 col-md-2">
+                <button type="button" id="Shorten" class="btn btn-info btn-block">Shorten it!</button>
               </div>
             </div>
           </form>
         </div>
+        <div id="links">
+          <div id="link-corto">
+          </div>
+        </div>
       </div>
-      <div id="aquimero"></div>
     </div>
-
   </section>
 
   <script>
   document.getElementById('Shorten').addEventListener('click', function(){
     let link = document.getElementById('mylink').value;
     if(link == ''){
-      document.getElementById('mylink').style.border = '3px solid var(--red) ';
+      document.getElementById('mylink').style.border = '3px solid var(--red)';
       document.getElementById('errorMessage').style.display = 'block';
+      document.getElementById('mylink').classList.add('error');
       return 0;
     }
-      document.getElementById('mylink').style.border = '3px solid green';
-      document.getElementById('errorMessage').style.display = 'none';
-      let url_larga = document.getElementById('mylink').value
-      fetch("https://rel.ink/api/links/",{
-        method:'POST',
-        body: JSON.stringify({
-          url:url_larga
-        }),
-        headers: {
-          "Content-type": "application/json"
-        }
-        })
-        .then(function(response){
-          return response.json()
-        })
-        .then(function(data){
-          document.getElementById("aquimero").innerHTML = `https://rel.ink/${data.hashid}`
-        })
-      });
-
+    document.getElementById('mylink').style.border = '3px solid green';
+    document.getElementById('errorMessage').style.display = 'none';
+    document.getElementById('mylink').classList.remove('error');
+    let url_larga = document.getElementById('mylink').value
+    fetch("https://rel.ink/api/links/",{
+      method:'POST',
+      body: JSON.stringify({
+        url:url_larga
+      }),
+      headers: {
+        "Content-type": "application/json"
+      }
+    })
+    .then(function(response){
+      return response.json()
+    })
+    .then(function(data){
+      document.getElementById("link-corto").innerHTML = `
+          <span class="links-largos">${url_larga}</span>
+          <span class="links_cortos" id="link_acortado">https://rel.ink/${data.hashid}</span>
+          <button class="btn btn-info btn-copy" onclick="copiarAlPortapapeles()">Copy</button>`
+    })
+  });
+  function copiarAlPortapapeles() {
+    var copyText = document.getElementById("link_acortado");
+    copyText.select();
+    document.execCommand("copy");
+  }
   </script>
 
     <section class="Section-3">
@@ -194,10 +204,14 @@
             <p>Contact</p>
           </div>
           <div class="col text-center">
-            <img src="images/icon-facebook.svg" alt="">
-            <img src="images/icon-twitter.svg" alt="">
-            <img src="images/icon-pinterest.svg" alt="">
-            <img src="images/icon-instagram.svg" alt="">
+            <object data="images/icon-facebook.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-twitter.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-pinterest.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-instagram.svg" type="image/svg+xml">
+            </object>
           </div>
         </div>
       </div>
