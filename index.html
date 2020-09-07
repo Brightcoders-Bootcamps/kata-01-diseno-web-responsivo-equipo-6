@@ -81,8 +81,6 @@
           </form>
         </div>
         <div id="links">
-          <div id="link-corto">
-          </div>
         </div>
       </div>
     </div>
@@ -114,10 +112,12 @@
       return response.json()
     })
     .then(function(data){
-      document.getElementById("link-corto").innerHTML = `
-          <span class="links-largos">${url_larga}</span>
-          <span class="links_cortos" id="link_acortado">https://rel.ink/${data.hashid}</span>
-          <button class="btn btn-info btn-copy" onclick="copiarAlPortapapeles()">Copy</button>`
+      document.getElementById("links").innerHTML = `
+      <div id="link-corto">
+        <span class="links-largos">${url_larga}</span>
+        <span class="links_cortos" id="link_acortado">https://rel.ink/${data.hashid}</span>
+        <button class="btn btn-info btn-copy" onclick="copiarAlPortapapeles()">Copy</button>
+      </div>`
     })
   });
   function copiarAlPortapapeles() {
