@@ -123,7 +123,7 @@ div.ilustration-1 {
   background-color: #80deea;
 }
 
-@media (min-width: 319px) and (max-width: 767.97px) { 
+@media (min-width: 319px) and (max-width: 1023.97px) { 
   div.intro{
     text-align: center;
   }
@@ -133,6 +133,11 @@ div.ilustration-1 {
   div.ilustration-1 {
     height: 350px;
     margin-left: 10px;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 1023.97px){
+  div.ilustration-1{
+    height: 500px;
   }
 }
 
@@ -264,21 +269,28 @@ div.ilustration-1 {
 
 .tag{
   border-radius: 10px;
-  padding: 80px 40px 40px 30px;
+  padding: 80px 25px 10px 25px;
+  margin-right: 0px;
+  margin-left: 0px;
   max-height: 300px;
 }
+.tag h4 {
+  margin-bottom: 20px;
+}
 .tag-1{
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .tag-2{
-  margin-top: 140px;
+  margin-top: 100px;
 }
 
 div.rayita{
   background: var(--cyan);
-  margin-top: 200px;
-  max-width: 40px;
   height: 10px;
+  margin-top: 160px;
+  max-width: 40px;
+  overflow: hidden;
+  width: 100%;
 }
 
 
@@ -315,16 +327,16 @@ div.rayita{
     border-radius: 10px;
     padding: 50px 35px 35px 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
     text-align: center;
   }
   
   div.rayita{
     height: 70px;
-    overflow: visible;
+    max-width: 15px;
     margin: auto;
-    margin-top: 34px;
-    max-width: 10px;
 
   }
 }
