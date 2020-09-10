@@ -187,7 +187,10 @@ div.ilustration-1 {
   margin: auto;
   max-width: 1020px;
 }
-
+#links{
+  margin: auto;
+  max-width: 1020px;
+}
 #link-corto {
   background-color: white;
   border-radius: 5px;
