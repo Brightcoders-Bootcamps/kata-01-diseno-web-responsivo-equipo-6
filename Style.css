@@ -212,6 +212,10 @@ div.ilustration-1 {
   margin-left: 30px;
 }
 
+.links_cortos:focus{
+  outline: none;
+}
+
 
 @media only screen and (min-width: 319px) and (max-width: 1023.97px) {
   .container-section-2 {
