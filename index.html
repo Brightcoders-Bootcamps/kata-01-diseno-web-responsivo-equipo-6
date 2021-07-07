@@ -1,83 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Other css -->
+    <link rel="stylesheet" href="./Style.css">
+
+    <!-- Js Clipboard -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.3/dist/clipboard.min.js"></script>
+  </head>
+
+  <body>
+
+    <section>
+      <div class="container p-5 encabezado">
+        <nav class="navbar navbar-expand-lg"> 
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt=""> 
+          </a>
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img id="logo" src="images/menu.png" alt=""></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+            </ul>
+            <hr class="linea">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+              <a id="SignUp" class="nav-link" href="#">Sign Up</a>
+              </li>
+            </ul>
+          </div>  
+        </nav>
+      </div>
+    </section>
+    
+
+    <section class="Section-1 mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container col-12 col-lg-6 intro order-2 order-lg-1 pt-5">
+            <h1>More than just shorter links</h1>
+            <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <button class="btn btn-info">Get Started</button>
+          </div>
+          <div class=" col-12 col-lg-6 ilustration-1 order-1"></div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="Section-2">
+      <div class="container">
+        <div class="container-section-2">
+          <form>
+            <div class="row">
+              <div class="col-md-12 col-lg-9">
+                <input type="text" id="mylink" class="form-control " placeholder="Shorten a link here...">
+                <span id="errorMessage">Please add a link</span>
+              </div>
+              <div class="col-md-12 col-lg-3">
+                <button type="button" id="Shorten" class="btn btn-info btn-block shorten">Shorten it!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="links">
+        </div>
+      </div>
+    </div>
+  </section>    
+    <section class="Section-3 ">
+      <div class="container pt-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-sm-7 col-lg-6 mt-5 mb-5 text-center">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+          </div>
+        </div>
+
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-11 col-xl-3  bg-white  tag">
+              <div class="icon-bg"><img src="./images/icon-brand-recognition.svg" class="icon-section-3" alt="icon-brand-recognition"></div>
+              <h4>Brand Recognition</h4>
+              <p>Boost your brand recognition with each click. Generic links don't mean a thing. 
+                Branded links help instill confidence in your content
+              </p>
+            </div>
+            
+            <div class="rayita "></div>          
+
+            <div class="col-11 col-xl-3  bg-white  tag tag-1 ">         
+                <div class="icon-bg-2"><img src="./images/icon-detailed-records.svg" class="icon-section-3" alt="icon-detailed-records"></div>
+                <h4>Detailed Records</h4>
+                <p>Gain into who is clicking your links. Knowing when and where people engage with your 
+                  content helps inform better decisions.
+                </p>
+              </div>
+
+            <div class="rayita"></div>  
+
+            <div class="col-11 col-xl-3  bg-white  tag tag-2 mb-5">
+              <div class="icon-bg-3"><img src="./images/icon-fully-customizable.svg" class="icon-section-3" alt="icon-fully-customizable"></div>
+                <h4>Fully Customizable</h4>
+                <p>Improve brand awareness and content discoverability through customizable links, supercharging
+                  audience engagement.
+                </p>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="Section-4">
+      <div class="container p-5 text-white">
+        <div class="row text-center">
+          <div class="col">
+            <p>Boost your links today</p>
+            <button class="btn btn-info">Get Started</button>
+          </div>
+        </div>
+    </section>
+
+    <!-- begin footer -->
+    <section class="Section-5 justify-content-center">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <h3>Shortly</h3>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <p>Features</p>
+            <p>Link Shortening</p>
+            <p>Branded Links</p>
+            <p>Analytics</p>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <p>Resourses</p>
+            <p>Blog </p>
+            <p>Developers </p>
+            <p>Support</p>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <p>Company</p>
+            <p>About </p>
+            <p>Our Team </p>
+            <p>Careers</p>
+            <p>Contact</p>
+          </div>
+          <div class="col text-center">
+            <object data="images/icon-facebook.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-twitter.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-pinterest.svg" type="image/svg+xml">
+            </object>
+            <object data="images/icon-instagram.svg" type="image/svg+xml">
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+    crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
   
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  </body>
+</html> 
